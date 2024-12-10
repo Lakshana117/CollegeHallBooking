@@ -1,0 +1,100 @@
+.halls-container {
+  position: relative;
+  min-height: 100vh; /* Ensures the container height covers the full viewport height */
+  padding: 40px 0;
+  font-family: "Poppins", sans-serif;
+  background: white;
+  background-image: url('https://skct.edu.in/wp-content/uploads/2024/04/SKCT-College-Campus-14.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+  .halls-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+  }
+  
+  .halls-content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .hall-detail-flex {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+  
+  .hall-detail-image {
+    flex: 1;
+    padding-right: 2rem;
+  }
+  
+  .hall-detail-img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .hall-detail-info {
+    flex: 1;
+  }
+  
+  .hall-detail-heading {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: black;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+  }
+  
+  .hall-detail-description,
+  .hall-detail-capacity,
+  .hall-detail-location {
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: black;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+  }
+  
+  .hall-detail-button-container {
+    margin-top: 2rem;
+  }
+  
+  .hall-detail-button {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem 2.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  
+  .hall-detail-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .hall-detail-button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+  }
+  

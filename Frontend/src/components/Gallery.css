@@ -1,0 +1,95 @@
+.gallery-section {
+  padding: 60px 20px;
+  background-image: url('https://skct.edu.in/wp-content/uploads/2024/04/SKCT-College-Campus-16.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+.gallery-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.gallery-container h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.gallery-container h1::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: #007bff;
+  display: block;
+  margin: 20px auto 0;
+  border-radius: 2px;
+}
+
+.image-track {
+  display: flex;
+  gap: 20px;
+  animation: scroll 5s linear infinite; /* Reduced duration for faster speed */
+  position: relative;
+  z-index: 1;
+  width: calc(300px * 12);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-300px * 6));
+  }
+}
+
+.gallery-slide {
+  min-width: 300px;
+  flex-shrink: 0;
+}
+
+.gallery-img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .gallery-container h1 {
+    font-size: 2rem;
+  }
+
+  .gallery-img {
+    max-height: 300px;
+  }
+
+  .image-track {
+    animation-duration: 2.5s; /* Faster on smaller screens */
+  }
+}

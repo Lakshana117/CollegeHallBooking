@@ -1,0 +1,120 @@
+.halls-container {
+  position: relative;
+  padding: 40px 0;
+  font-family: "Poppins", sans-serif;
+  background: white;
+  background-image: url('https://skct.edu.in/wp-content/uploads/2024/04/SKCT-College-Campus-14.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.halls-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust opacity */
+  z-index: 0;
+}
+
+.halls-heading {
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 40px;
+  font-size: 40px;
+  letter-spacing: 1.5px;
+  position: relative;
+  z-index: 1;
+}
+
+.halls-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: relative;
+  z-index: 1;
+}
+
+.hall-card {
+  width: 30%;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.hall-content {
+  backdrop-filter: blur(10px);
+  background: rgba(249, 247, 247, 0.959);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.4s, box-shadow 0.4s;
+  padding: 25px;
+  transform: translateY(0);
+}
+
+.hall-content:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 35px rgba(0, 0, 0, 0.25);
+}
+
+.hall-image-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hall-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.4s;
+}
+
+.hall-image:hover {
+  transform: scale(1.05);
+}
+
+.hall-name {
+  font-size: 24px;
+  margin: 15px 0;
+  font-weight: 600;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.hall-info {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #7f8c8d;
+  text-align: center;
+}
+
+.hall-button-container {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.hall-button {
+  background-color: #2980b9;
+  background-image: linear-gradient(45deg, #2980b9, #6dd5fa, #ffffff);
+  color: black;
+  padding: 14px 35px;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all 0.3s;
+  font-weight: 700;
+  font-size: 17px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+}
+
+.hall-button:hover {
+  background-image: linear-gradient(45deg, #6dd5fa, #2980b9, #ffffff);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}

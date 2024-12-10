@@ -1,0 +1,37 @@
+.booking-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  padding-top: 80px;
+ 
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  padding-top: 200px;
+  padding-right: 120px;
+ 
+}
+
+.image-container img {
+  max-width: 75%; /* Increase the image size to 75% of its original width */
+  height: auto;
+  max-height: 75vh; /* Limit the height to 75% of viewport height, adjust as needed */
+}
+
+
+.booking-form {
+  flex: 2;
+  width: 100%;
+  max-width: 800px; /* Adjust as needed for form width */
+  padding: 20px;
+  margin: 0 auto;
+  background-color: #fff; /* Background color for the form */
+}

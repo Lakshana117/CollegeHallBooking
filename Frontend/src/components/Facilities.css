@@ -1,0 +1,101 @@
+.Facilities {
+  padding: 40px;
+  text-align: center;
+  /* Light background to highlight the table */
+}
+
+.Facilities h2 {
+  margin-bottom: 20px;
+  color: #004d40;
+  font-size: 2.5rem;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  background: -webkit-linear-gradient(45deg, #004d40, #00796b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  border-bottom: 2px solid #00796b;
+  padding-bottom: 10px;
+}
+
+.facilities-table {
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: 0 10px; /* Space between rows for card effect */
+  background: transparent;
+}
+
+.facilities-table th {
+  background: linear-gradient(135deg, #007bff, #004dff);
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 12px 15px;
+  border-radius: 8px 8px 0 0;
+}
+
+.facilities-table td {
+  background: white;
+  color: #333;
+  text-align: center;
+  font-size: 1rem;
+  padding: 20px;
+  border-radius: 0 0 8px 8px; /* Rounded corners for the bottom */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.facilities-table td:before {
+  content: '\1F4CC'; /* Placeholder for icon, replace with actual icon font or SVG */
+  font-size: 1.2rem;
+  color: #00796b;
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.facilities-table tr:nth-child(even) td {
+  background: #f9f9f9;
+}
+
+.facilities-table tr:hover td {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.facilities-table tr:hover td:before {
+  color: #004d40;
+}
+
+.facilities-table td:hover {
+  cursor: pointer;
+}
+
+.facilities-table td.expandable {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.facilities-table td.expandable:hover {
+  white-space: normal;
+  word-wrap: break-word;
+  background-color: #e0f7fa;
+}
+
+.facilities-table tr {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #e0f7fa, #f2f2f2); /* Gradient border effect */
+}
+
+.facilities-table tr:hover {
+  transform: translateY(-10px); /* Lift entire row on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}

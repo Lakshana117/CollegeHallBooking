@@ -1,0 +1,76 @@
+/* Profile.css */
+.profile-container {
+  padding: 20px;
+  background-color: white;
+}
+
+.profile-header {
+  text-align: center;
+  background-color: white;
+}
+
+.profile-pic {
+  border-radius: 50%;
+}
+
+.profile-name {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.profile-role {
+  color: #666;
+}
+
+.profile-details {
+  margin-top: 20px;
+}
+
+.detail-item {
+  margin-bottom: 20px;
+  color:white;
+  font-size: large;
+}
+
+.profile-email-edit,
+.profile-username-edit,
+.profile-password-edit {
+  margin-top: 10px;
+}
+
+.profile-email,
+.profile-password {
+  font-size: 16px;
+}
+
+.profile-buttons {
+  margin-top: 20px;
+}
+
+.save-button {
+  background-color: #007bff;
+}
+
+.save-button:hover {
+  background-color: #0056b3;
+}
+
+.change-password-button {
+  background-color: #28a745;
+}
+
+.change-password-button:hover {
+  background-color: #218838;
+}
+
+.logout-button {
+  background-color: #ff5f5f;
+}
+
+.logout-button:hover {
+  background-color: #e04444;
+}
+
+.change-password-modal {
+  padding: 20px;
+}

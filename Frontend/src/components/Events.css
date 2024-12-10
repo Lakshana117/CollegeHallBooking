@@ -1,0 +1,40 @@
+/* Styling for the full-width line */
+.full-width-line {
+    width: 100%;
+    height: 2px; 
+    background-color: #333; 
+    margin: 20px 0;
+  }
+  
+  /* Styling for the event heading with underline */
+  .event-heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+  }
+
+  /* Hover effect for the cards */
+  .event-card:hover {
+    transform: translateY(-10px) scale(1.05); /* Move up slightly and zoom in on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  }
+  
+  /* Additional styling for the cards */
+  .event-card {
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  /* Styling for card media images */
+  .event-card img {
+    object-fit: cover;
+    width: 100%;
+    height: 200px; /* Adjusted height for images */
+  }
+  
+  /* Card content padding */
+  .card-content {
+    padding: 20px; /* Increased padding for more space */
+  }
+  

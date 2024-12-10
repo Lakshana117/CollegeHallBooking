@@ -1,0 +1,129 @@
+/* General reset */
+.contact-us-wrapper {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://skct.edu.in/wp-content/uploads/2024/04/SKCT-College-Campus-28.jpg');
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative; /* Required for the overlay */
+}
+
+/* Adding an overlay to dim the background image */
+.contact-us-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the 0.5 value to control the darkness */
+    z-index: 1; /* Ensure the overlay is above the background image */
+}
+
+/* Body styling */
+.contact-us-wrapper {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e0f7fa;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    position: relative; /* Ensures the content is above the overlay */
+    z-index: 2; /* Ensure the form content is above the overlay */
+}
+
+/* Contact box styling */
+.contact-box {
+    background: rgba(255, 255, 255, 0.85); /* Slight transparency for the form background */
+    padding: 50px 40px;
+    border-radius: 12px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 3; /* Ensure the form is above everything else */
+}
+
+.contact-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Title styling */
+.contact-title {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+/* Input fields styling */
+.contact-input,
+.contact-textarea {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f1f1f1;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-input:focus,
+.contact-textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+/* Textarea height */
+.contact-textarea {
+    height: 150px;
+    resize: none;
+}
+
+/* Submit button styling */
+.contact-submit {
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-submit:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+/* Confirmation message styling */
+.confirmation-message {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #28a745;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .contact-box {
+        padding: 30px;
+        max-width: 100%;
+    }
+
+    .contact-title {
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,122 @@
+/* Styles specific to Student Profile */
+.student-profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.student-profile-card {
+  width: 100%;
+  max-width: 700px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  text-align: center;
+}
+
+.student-profile-header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.student-profile-picture {
+  font-size: 100px;
+  color: #6c63ff;
+}
+
+.student-profile-header h1 {
+  font-size: 2rem;
+  color: #333;
+  margin: 0;
+}
+
+/* Profile info and form styling */
+.student-profile-info, .profile-form {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 20px;
+  text-align: left; /* Align text to the left for readability */
+}
+
+.student-form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.student-form-group label {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.student-form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+.student-profile-actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Space out buttons */
+}
+
+.student-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease; /* Add smooth transition */
+}
+
+.student-save-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.student-cancel-btn, .edit-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.student-btn:hover {
+  opacity: 0.9;
+}
+
+.student-profile-info p {
+  margin: 10px 0;
+  font-weight: 500;
+  font-size: 1.1em;
+  color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .student-profile-card {
+    width: 90%;
+    padding: 20px;
+  }
+  
+  .student-profile-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .student-btn {
+    font-size: 0.9em;
+    padding: 8px 16px;
+  }
+}

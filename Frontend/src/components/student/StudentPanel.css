@@ -1,0 +1,142 @@
+/* General styling for the entire page */
+.student-panel {
+  background: linear-gradient(to right, #c8e1ff, #0d47a1); /* Example gradient */
+  display: flex;
+  min-height: 100vh;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+
+.student-sidebar {
+  width: 250px;
+  background-color: #2C3E50;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  position: fixed; /* Fixes the sidebar in place */
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100vh; /* Ensures it covers the full height */
+  transition: width 0.3s ease;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Adds a slight shadow for depth */
+}
+.student-main-content {
+  margin-left: 250px; /* Adjusted to account for the sidebar width */
+  padding: 40px;
+  flex: 1;
+  height: 100vh; /* Ensure it covers the full height */
+  box-sizing: border-box; /* Include padding and border in width and height */
+  transition: margin-left 0.3s ease;
+  background: linear-gradient(to right, #c8e1ff, #0d47a1); /* Background gradient */
+}
+
+.student-sidebar-closed .main-content {
+  margin-left: 80px; /* Adjust margin when sidebar is closed */
+}
+
+
+/* Header for user information at the top of the sidebar */
+.student-sidebar-header {
+  text-align: center;
+  margin-bottom: 30px;
+  width: 100%;
+  padding: 20px;
+  background-color: #34495E; /* Slightly different background to distinguish the header */
+  box-sizing: border-box; /* Ensures padding is included in width calculations */
+}
+
+.student-profile-pic {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin-bottom: 10px;
+  border: 2px solid #ecf0f1; /* Adds a border around the profile picture */
+}
+
+.student-status {
+  display: block;
+  font-size: 14px;
+}
+
+.student-online {
+  color: #27ae60;
+}
+
+/* Sidebar navigation */
+.student-sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+.student-sidebar li {
+  margin: 15px 0; /* Adds space between items */
+  width: 100%;
+  text-align: center;
+}
+
+.student-sidebar a {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0; /* Adjusts padding for better click area */
+  width: 100%;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.student-sidebar a:hover {
+  background-color: #1ABC9C;
+  transform: translateX(5px); /* Slight move to the right on hover */
+}
+
+/* Logout button styling */
+.student-logout-button {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 15px 20px; /* Increases padding for better visibility */
+  margin-top: auto; /* Pushes the button to the bottom */
+  margin-bottom: 20px;
+  width: 80%;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.student-logout-button:hover {
+  background-color: #c0392b;
+  transform: scale(1.05); /* Slight grow on hover */
+}
+
+
+
+.sidebar-closed .main-content {
+  margin-left: 80px; /* Adjust margin when sidebar is closed */
+}
+
+
+.sidebar-closed .main-content {
+  margin-left: 80px; /* Adjust margin when sidebar is closed */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 80px;
+  }
+
+  .main-content {
+    margin-left: 80px;
+  }
+
+  .bookings-table th, .bookings-table td {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,207 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center vertically */
+  height: 100vh;
+  padding: 20px;
+  background-image: url('https://skct.edu.in/wp-content/uploads/2024/04/SKCT-College-Campus-13.jpg');
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.6); /* Darker black overlay */
+}
+
+.logo-container {
+  margin-bottom: 50px; /* Adjust space between logo and login form as needed */
+  display: flex;
+  justify-content: center; /* Center the logo horizontally */
+}
+
+.logo-container img {
+  width: 800px;
+  height: auto;
+  object-fit: contain;
+}
+
+.login-form {
+  background: rgba(255, 255, 255, 0.8); /* Reduced transparency */
+  padding: 30px;
+  border-radius: 12px; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 20px; /* Space from the top */
+}
+
+.login-form:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.login-form h1 {
+  margin-bottom: 24px;
+  font-size: 28px;
+  color: #333;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 10px; 
+  font-weight: 500;
+  color: #666;
+}
+
+.alert {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 20px; /* Add some space below the alert */
+}
+
+.alert-danger {
+  border-color: #f5c6cb;
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Custom styling for the alert popup */
+.custom-alert {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 40px);
+  max-width: 600px; /* Optional: Set a max-width for better control */
+  z-index: 1000;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #f8d7da; /* Light red background */
+  color: #721c24; /* Dark red text */
+  border: 1px solid #f5c6cb; /* Light red border */
+}
+
+/* Close button styling */
+.custom-alert .btn-close {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* Optional: Add animation for showing/hiding the alert */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.custom-alert.show {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.login-form input {
+  width: calc(100% - 20px);
+  padding: 12px;
+  margin-bottom: 16px; 
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  transition: border-color 0.3s ease;
+  text-align: center;
+  background: #fff; /* Removed transparency by setting a solid white background */
+}
+
+.login-form input:focus {
+  border-color: #0056b3; 
+  outline: none;
+  background: #fff; /* Keep the background solid on focus as well */
+}
+
+/* Keep the alert inside the form without affecting its size */
+.login-form .alert {
+  margin-bottom: 20px; /* Space between the alert and the form elements */
+  font-size: 14px; /* Slightly smaller font size to fit better */
+  padding: 10px; /* Less padding to maintain the form's overall size */
+  border-radius: 6px; /* Match the border-radius of the form */
+}
+
+/* Ensure the login form maintains its size */
+.login-form {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 12px; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 20px; /* Space from the top */
+  position: relative;
+  overflow: hidden; /* Ensures the alert doesn't overflow and change the box size */
+  min-height: 350px; /* Ensures minimum height is maintained */
+}
+
+.login-form .error {
+  color: #ff4d4d; 
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 12px; 
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #0056b3;
+  transform: scale(1.02);
+}
+
+.login-form button:focus {
+  outline: none;
+}
+
+/* Register link styling */
+.register-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.register-link p {
+  color: #555;
+  font-family: 'Roboto', sans-serif;
+}
+
+.register-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}

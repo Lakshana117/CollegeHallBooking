@@ -1,0 +1,101 @@
+/* Faculty panel container */
+.faculty-panel {
+    display: flex;
+    height: 100vh;
+    transition: all 0.3s ease;
+}
+
+/* Sidebar styling */
+.faculty-sidebar {
+    width: 220px; /* Adjust width to match student sidebar */
+    background-color: #2c3e50; /* Match student background color */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    transition: width 0.3s ease;
+}
+
+.faculty-sidebar .sidebar-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faculty-profile-pic {
+    border-radius: 50%;
+    width: 80px; /* Adjusted size to match student style */
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.faculty-status {
+    font-size: 14px;
+    color: #28a745; /* Online status color */
+}
+
+.faculty-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+.faculty-sidebar li {
+    margin: 15px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.faculty-sidebar a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 0;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.faculty-sidebar a:hover {
+    background-color: #34495e; /* Hover color to match student panel */
+}
+
+.faculty-sidebar a svg {
+    margin-right: 8px;
+}
+
+/* Logout button styling */
+.faculty-logout-button {
+    margin-top: auto;
+    margin-bottom: 20px;
+    padding: 10px 30px;
+    background-color: #e74c3c; /* Match student logout button color */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.faculty-logout-button:hover {
+    background-color: #c0392b;
+}
+
+/* Main content styling */
+.faculty-main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f5f6fa; /* Light background to match student panel */
+    transition: margin-left 0.3s ease;
+}
+
+.faculty-toggle-sidebar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
